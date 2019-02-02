@@ -53,7 +53,8 @@ class SpeakerDetailFragment : Fragment() {
     }
 
     private fun initializeViewModel() {
-        viewModel = ViewModelProviders.of(this, viewModelFactory).get(SpeakerDetailViewModel::class.java)
+        viewModel = ViewModelProviders.of(this, viewModelFactory)
+            .get(SpeakerDetailViewModel::class.java)
     }
 
     private fun populateView() {
@@ -66,14 +67,14 @@ class SpeakerDetailFragment : Fragment() {
         imgv_twitter.visibility = if (viewModel.showTwitterHandle) View.VISIBLE else View.GONE
         if (viewModel.showTwitterHandle) {
             imgv_twitter.setOnClickListener {
-                activity?.loadUriInCustomTab(getTwitterUri())
+                activity?.loadUriInCustomTab(viewModel.twitterUri)
             }
         }
 
         imgv_linkedin.visibility = if (viewModel.showLinkedInHandle) View.VISIBLE else View.GONE
         if (viewModel.showLinkedInHandle) {
             imgv_linkedin.setOnClickListener {
-                activity?.loadUriInCustomTab(getLinkedInUri())
+                activity?.loadUriInCustomTab(viewModel.linkedInUri)
             }
         }
 
@@ -83,21 +84,5 @@ class SpeakerDetailFragment : Fragment() {
             .placeholder(R.drawable.emo_im_cool)
             .crossFade()
             .into(imgv_speaker_detail_avatar)
-    }
-
-    private fun getTwitterUri(): String {
-        return String.format(
-            "%s%s",
-            resources.getString(R.string.twitter_link),
-            viewModel.twitterHandle
-        )
-    }
-
-    private fun getLinkedInUri(): String {
-        return String.format(
-            "%s%s",
-            resources.getString(R.string.linkedin_profile_link),
-            viewModel.linkedInHandle
-        )
     }
 }

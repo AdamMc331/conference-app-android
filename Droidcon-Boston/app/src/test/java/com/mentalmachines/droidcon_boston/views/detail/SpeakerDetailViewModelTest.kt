@@ -42,8 +42,9 @@ class SpeakerDetailViewModelTest {
     }
 
     @Test
-    fun getTwitterHandle() {
-        assertEquals(twitterHandle, viewModel.twitterHandle)
+    fun getTwitterUri() {
+        val expected = "https://twitter.com/$twitterHandle"
+        assertEquals(expected, viewModel.twitterUri)
     }
 
     @Test
@@ -55,8 +56,9 @@ class SpeakerDetailViewModelTest {
     }
 
     @Test
-    fun getLinkedInHandle() {
-        assertEquals(linkedInHandle, viewModel.linkedInHandle)
+    fun getLinkedInUri() {
+        val expected = "https://www.linkedin.com/in/$linkedInHandle"
+        assertEquals(expected, viewModel.linkedInUri)
     }
 
     @Test

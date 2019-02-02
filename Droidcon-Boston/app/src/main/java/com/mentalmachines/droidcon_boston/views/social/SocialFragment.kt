@@ -12,6 +12,7 @@ import com.mentalmachines.droidcon_boston.modal.SocialModal
 import com.mentalmachines.droidcon_boston.utils.DividerItemDecoration
 import com.mentalmachines.droidcon_boston.utils.RVItemClickListener
 import com.mentalmachines.droidcon_boston.utils.RVItemClickListener.OnItemClickListener
+import com.mentalmachines.droidcon_boston.utils.SocialUtils
 import com.mentalmachines.droidcon_boston.utils.loadUriInCustomTab
 import kotlinx.android.synthetic.main.social_fragment.*
 import java.util.*
@@ -86,11 +87,7 @@ class SocialFragment : Fragment() {
             SocialModal(
                 R.drawable.social_twitter,
                 getString(R.string.social_title_twitter),
-                String.format(
-                    "%s%s",
-                    resources.getString(R.string.twitter_link),
-                    getString(string.droidconbos_twitter_handle)
-                )
+                SocialUtils.getTwitterUriForHandle(getString(string.droidconbos_twitter_handle))
             )
         )
         return socialList
