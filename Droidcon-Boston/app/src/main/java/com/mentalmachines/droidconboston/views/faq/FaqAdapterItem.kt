@@ -71,7 +71,6 @@ class FaqAdapterItem internal constructor(val itemData: Answer, header: FaqAdapt
         holder.rootLayout.setBackgroundResource(outValue.resourceId)
     }
 
-
     class ViewHolder(view: View, adapter: FlexibleAdapter<*>) : FlexibleViewHolder(view, adapter) {
 
         lateinit var rootLayout: View

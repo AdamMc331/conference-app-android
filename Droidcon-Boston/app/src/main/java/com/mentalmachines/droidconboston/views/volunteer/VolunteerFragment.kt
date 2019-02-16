@@ -1,6 +1,5 @@
 package com.mentalmachines.droidconboston.views.volunteer
 
-
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -91,7 +90,8 @@ class VolunteerFragment : Fragment(), FlexibleAdapter.OnItemClickListener {
         volunteerAdapter = FlexibleAdapter(items)
         volunteerAdapter.addListener(this)
         volunteer_recycler.adapter = volunteerAdapter
-        volunteer_recycler.addItemDecoration(FlexibleItemDecoration(volunteer_recycler.context).withDefaultDivider())
+        volunteer_recycler.addItemDecoration(
+            FlexibleItemDecoration(volunteer_recycler.context).withDefaultDivider())
         volunteerAdapter.expandItemsAtStartUp().setDisplayHeadersAtStartUp(false)
     }
 }

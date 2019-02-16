@@ -30,7 +30,6 @@ import org.threeten.bp.LocalDateTime
 import org.threeten.bp.ZoneId
 import timber.log.Timber
 
-
 class NotificationUtils(context: Context) : ContextWrapper(context) {
 
     init {
@@ -57,7 +56,6 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
 
             getNotificationManager().createNotificationChannel(androidChannel)
         }
-
     }
 
     private fun getNotificationManager(): NotificationManager {
@@ -99,9 +97,8 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
                     val scheduleEvent =
                         roomSnapshot.getValue(FirebaseDatabase.ScheduleEvent::class.java)
                     scheduleEvent?.let {
-                        if (userRepo.isSessionBookmarked(eventId) && scheduleEvent.getLocalStartTime().isAfter(
-                                LocalDateTime.now()
-                            )
+                        if (userRepo.isSessionBookmarked(eventId) &&
+                            scheduleEvent.getLocalStartTime().isAfter(LocalDateTime.now())
                         ) {
                             scheduleEvent.scheduleNotification(
                                 context,
