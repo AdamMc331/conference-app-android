@@ -1,7 +1,8 @@
 package com.mentalmachines.droidcon_boston.data
 
 import com.google.firebase.auth.FirebaseUser
-import com.mentalmachines.droidcon_boston.firebase.AuthController
+import com.mentalmachines.droidconboston.data.FirebaseDatabase
+import com.mentalmachines.droidconboston.firebase.AuthController
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test

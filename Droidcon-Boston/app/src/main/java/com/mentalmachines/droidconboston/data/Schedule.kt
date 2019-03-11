@@ -2,8 +2,6 @@ package com.mentalmachines.droidconboston.data
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
-import java.util.*
-
 
 /*
  * View models for schedule and schedule detail items.

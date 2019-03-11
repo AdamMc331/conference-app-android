@@ -132,7 +132,8 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
         if (alarmTime.isAfter(LocalDateTime.now())) {
             val pendingIntent =
                 getAgendaSessionNotificationPendingIntent(sessionId, title, body, sessionDetail)
-            val utcInMillis = alarmTime.atZone(ZoneId.systemDefault()).toEpochSecond() * MILLIS_PER_SECOND
+            val utcInMillis =
+                alarmTime.atZone(ZoneId.systemDefault()).toEpochSecond() * MILLIS_PER_SECOND
             val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
             alarmManager.set(AlarmManager.RTC_WAKEUP, utcInMillis, pendingIntent)
         }

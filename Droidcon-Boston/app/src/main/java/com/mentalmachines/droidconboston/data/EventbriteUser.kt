@@ -20,7 +20,7 @@ data class EventbriteProfile(
 data class EventbriteQuestion(
     var answer: String?,
     var question: String,
-    //20940481 is the question_id for the twitter handle in the response.
+    // 20940481 is the question_id for the twitter handle in the response.
     var question_id: String,
     var type: QuestionType?
 )
