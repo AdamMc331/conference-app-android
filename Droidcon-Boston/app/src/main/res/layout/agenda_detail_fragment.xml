@@ -30,8 +30,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_marginTop="30dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
             android:textColor="@android:color/white"
             android:textSize="24sp"
             android:textStyle="bold"
@@ -44,8 +44,8 @@
             android:layout_above="@+id/tv_agenda_detail_time"
             android:layout_alignParentStart="true"
             android:fontFamily="sans-serif"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
             android:textColor="@android:color/white"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -57,10 +57,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/imgv_header_bg"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/margin_large"
             android:fontFamily="sans-serif"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
+            android:paddingStart="@dimen/margin_large"
+            android:paddingEnd="@dimen/margin_large"
             android:textColor="@color/colorAccent"
             android:textSize="18sp"
             tools:text="10:30 am - 11:15 am" />
@@ -72,7 +72,7 @@
             android:layout_below="@+id/tv_agenda_detail_room"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="@dimen/margin_large"
             android:tint="@android:color/white"
             app:backgroundTint="@color/colorLightGray"
             app:srcCompat="@drawable/ic_star" />
@@ -83,7 +83,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/imgv_header_bg"
             android:orientation="vertical"
-            android:padding="16dp">
+            android:padding="@dimen/margin_large">
 
             <TextView
                 android:id="@+id/tv_agenda_detail_speaker_title"

@@ -4,11 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:alpha="0.0"
-    android:padding="16dp"
+    android:padding="@dimen/margin_large"
     tools:alpha="1.0">
 
     <TextView
-        android:id="@+id/empty_text"
+        android:id="@+id/empty_filter_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

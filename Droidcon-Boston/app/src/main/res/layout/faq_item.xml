@@ -5,9 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingLeft="16dp"
+    android:paddingLeft="@dimen/margin_large"
     android:paddingTop="4dp"
-    android:paddingRight="16dp"
+    android:paddingRight="@dimen/margin_large"
     android:paddingBottom="8dp"
     tools:ignore="UseCompoundDrawables">
 

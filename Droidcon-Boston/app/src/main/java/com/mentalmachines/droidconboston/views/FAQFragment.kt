@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.mentalmachines.droidconboston.R.layout
+import com.mentalmachines.droidconboston.R
 import com.mentalmachines.droidconboston.data.FirebaseDatabase.FaqEvent
 import com.mentalmachines.droidconboston.firebase.FirebaseHelper
 import com.mentalmachines.droidconboston.views.faq.FaqAdapterItem
@@ -32,7 +32,7 @@ class FAQFragment : Fragment(), FlexibleAdapter.OnItemClickListener {
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        return inflater.inflate(layout.faq_fragment, container, false)
+        return inflater.inflate(R.layout.faq_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
