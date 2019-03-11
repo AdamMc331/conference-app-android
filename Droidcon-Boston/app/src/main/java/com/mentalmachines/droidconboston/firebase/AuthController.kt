@@ -10,8 +10,8 @@ import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.IdpResponse
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
-import com.mentalmachines.droidcon_boston.data.FirebaseDatabase
-import com.mentalmachines.droidcon_boston.data.UserAgendaRepo
+import com.mentalmachines.droidconboston.data.FirebaseDatabase
+import com.mentalmachines.droidconboston.data.UserAgendaRepo
 
 class AuthController {
 

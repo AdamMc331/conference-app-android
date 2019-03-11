@@ -2,9 +2,7 @@ package com.mentalmachines.droidconboston.views.agenda
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
-import com.mentalmachines.droidconboston.data.Schedule
-
-private const val PAGE_COUNT = 2
+import com.mentalmachines.droidconboston.BuildConfig
 
 class AgendaDayPagerAdapter internal constructor(
     fm: FragmentManager,

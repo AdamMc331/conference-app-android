@@ -7,10 +7,10 @@ import androidx.lifecycle.ViewModel
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
-import com.mentalmachines.droidcon_boston.data.FirebaseDatabase
-import com.mentalmachines.droidcon_boston.data.Schedule
-import com.mentalmachines.droidcon_boston.data.UserAgendaRepo
-import com.mentalmachines.droidcon_boston.firebase.FirebaseHelper
+import com.mentalmachines.droidconboston.data.FirebaseDatabase
+import com.mentalmachines.droidconboston.data.Schedule
+import com.mentalmachines.droidconboston.data.UserAgendaRepo
+import com.mentalmachines.droidconboston.firebase.FirebaseHelper
 import timber.log.Timber
 
 class AgendaDayViewModel(
@@ -67,10 +67,6 @@ class AgendaDayViewModel(
         if (scheduleRows.value == null) {
             firebaseHelper.eventDatabase.addValueEventListener(dataListener)
         }
-    }
-
-    fun setActiveFilter(filter: String) {
-        _activeFilter.value = filter
     }
 
     override fun onCleared() {

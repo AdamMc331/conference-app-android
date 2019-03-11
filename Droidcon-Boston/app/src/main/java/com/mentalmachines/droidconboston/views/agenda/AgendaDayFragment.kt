@@ -24,14 +24,10 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.ValueEventListener
+import com.mentalmachines.droidcon_boston.views.agenda.AgendaDayViewModel
 import com.mentalmachines.droidconboston.R
-import com.mentalmachines.droidconboston.data.FirebaseDatabase.ScheduleEvent
 import com.mentalmachines.droidconboston.data.Schedule.ScheduleRow
 import com.mentalmachines.droidconboston.data.UserAgendaRepo
-import com.mentalmachines.droidconboston.firebase.FirebaseHelper
 import com.mentalmachines.droidconboston.utils.isNullorEmpty
 import com.mentalmachines.droidconboston.views.detail.AgendaDetailFragment
 import eu.davidea.flexibleadapter.FlexibleAdapter

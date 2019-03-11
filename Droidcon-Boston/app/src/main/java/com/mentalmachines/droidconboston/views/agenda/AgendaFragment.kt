@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.mentalmachines.droidconboston.BuildConfig
 import com.mentalmachines.droidconboston.R
 import kotlinx.android.synthetic.main.agenda_fragment.*
 import java.util.Calendar

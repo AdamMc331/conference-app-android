@@ -11,9 +11,9 @@ import android.widget.ImageView
 import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
-import com.mentalmachines.droidcon_boston.R
-import com.mentalmachines.droidcon_boston.data.Schedule
-import com.mentalmachines.droidcon_boston.utils.visibleIf
+import com.mentalmachines.droidconboston.R
+import com.mentalmachines.droidconboston.data.Schedule
+import com.mentalmachines.droidconboston.utils.visibleIf
 
 /**
  * A full screen dialog that is used to provide searching functionality in the app.

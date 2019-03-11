@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.Filter
 import android.widget.TextView
-import com.mentalmachines.droidcon_boston.R
-import com.mentalmachines.droidcon_boston.data.Schedule
+import com.mentalmachines.droidconboston.R
+import com.mentalmachines.droidconboston.data.Schedule
 
 class ScheduleSearchAdapter(
     context: Context,
