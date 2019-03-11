@@ -132,7 +132,7 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
         if (alarmTime.isAfter(LocalDateTime.now())) {
             val pendingIntent =
                 getAgendaSessionNotificationPendingIntent(sessionId, title, body, sessionDetail)
-            val utcInMillis = alarmTime.atZone(ZoneId.systemDefault()).toEpochSecond() * 1000
+            val utcInMillis = alarmTime.atZone(ZoneId.systemDefault()).toEpochSecond() * MILLIS_PER_SECOND
             val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
             alarmManager.set(AlarmManager.RTC_WAKEUP, utcInMillis, pendingIntent)
         }
@@ -199,5 +199,6 @@ class NotificationUtils(context: Context) : ContextWrapper(context) {
     companion object {
         const val ANDROID_CHANNEL_ID = "com.mentalmachines.droidcon_boston.ANDROID"
         const val ANDROID_CHANNEL_NAME = "ANDROID CHANNEL"
+        const val MILLIS_PER_SECOND = 1000
     }
 }
