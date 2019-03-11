@@ -24,7 +24,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
-import com.mentalmachines.droidcon_boston.views.agenda.AgendaDayViewModel
 import com.mentalmachines.droidconboston.R
 import com.mentalmachines.droidconboston.data.Schedule.ScheduleRow
 import com.mentalmachines.droidconboston.data.UserAgendaRepo
@@ -57,7 +56,11 @@ class AgendaDayFragment : Fragment(), FlexibleAdapter.OnItemClickListener {
             val userAgendaRepo = UserAgendaRepo.getInstance(requireContext())
 
             @Suppress("UNCHECKED_CAST")
-            return AgendaDayViewModel(dayFilter, onlyMyAgenda, userAgendaRepo) as T
+            return AgendaDayViewModel(
+                dayFilter,
+                onlyMyAgenda,
+                userAgendaRepo
+            ) as T
         }
     }
 

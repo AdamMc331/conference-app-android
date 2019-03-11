@@ -1,4 +1,4 @@
-package com.mentalmachines.droidcon_boston.views.search
+package com.mentalmachines.droidconboston.views.search
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

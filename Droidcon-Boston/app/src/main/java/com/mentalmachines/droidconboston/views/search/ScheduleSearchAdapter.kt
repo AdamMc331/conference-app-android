@@ -1,4 +1,4 @@
-package com.mentalmachines.droidcon_boston.views.search
+package com.mentalmachines.droidconboston.views.search
 
 import android.content.Context
 import android.text.Html

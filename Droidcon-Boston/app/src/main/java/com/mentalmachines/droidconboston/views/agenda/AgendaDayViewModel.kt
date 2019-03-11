@@ -1,4 +1,4 @@
-package com.mentalmachines.droidcon_boston.views.agenda
+package com.mentalmachines.droidconboston.views.agenda
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

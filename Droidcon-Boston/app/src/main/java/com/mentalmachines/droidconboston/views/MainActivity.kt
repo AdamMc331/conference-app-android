@@ -11,7 +11,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.FragmentManager
-import com.mentalmachines.droidcon_boston.views.search.SearchDialog
+import com.mentalmachines.droidconboston.views.search.SearchDialog
 import com.mentalmachines.droidconboston.R
 import com.mentalmachines.droidconboston.R.id
 import com.mentalmachines.droidconboston.R.string

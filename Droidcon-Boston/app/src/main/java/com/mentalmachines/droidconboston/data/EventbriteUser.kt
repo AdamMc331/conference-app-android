@@ -1,4 +1,4 @@
-package com.mentalmachines.droidcon_boston.data
+package com.mentalmachines.droidconboston.data
 
 import com.google.gson.annotations.SerializedName
 

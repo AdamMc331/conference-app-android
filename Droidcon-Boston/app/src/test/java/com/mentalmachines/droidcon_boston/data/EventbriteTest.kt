@@ -1,7 +1,10 @@
 package com.mentalmachines.droidcon_boston.data
 
 import com.google.gson.Gson
-import com.mentalmachines.droidcon_boston.utils.ServiceLocator
+import com.mentalmachines.droidconboston.data.EventbriteQuestion
+import com.mentalmachines.droidconboston.data.EventbriteUser
+import com.mentalmachines.droidconboston.data.QuestionType
+import com.mentalmachines.droidconboston.utils.ServiceLocator
 import junit.framework.TestCase
 import org.junit.Before
 import org.junit.Test
